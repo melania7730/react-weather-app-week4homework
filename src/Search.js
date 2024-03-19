@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./Search.css";
 
 function Search() {
   const [city, setCity] = useState("");
@@ -16,7 +17,6 @@ function Search() {
       description: response.data.weather[0].description,
     });
   }
-
   function handleSearch(event) {
     event.preventDefault();
     let apiKey = "72f2ed2ea6be925ebac9cd943aeca284";
@@ -24,15 +24,21 @@ function Search() {
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}&units=${apiUnit}`;
     axios.get(apiUrl).then(showTemperature);
   }
-
   function updateCity(event) {
     setCity(event.target.value);
   }
 
   let form = (
     <form onSubmit={handleSearch}>
-      <input type="search" placeholder="Enter a city.." onChange={updateCity} />
-      <button type="Submit">Search</button>
+      <input
+        className="form-city"
+        type="search"
+        placeholder="Enter a city.."
+        onChange={updateCity}
+      />
+      <button className="form-button" type="Submit">
+        Search
+      </button>
     </form>
   );
 

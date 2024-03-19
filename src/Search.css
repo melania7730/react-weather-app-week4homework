@@ -1,0 +1,17 @@
+.form-city {
+  background-color: #eaf6f6;
+  border: none;
+  border-radius: 7px;
+  width: 80%;
+  padding: 15px 20px;
+  font-size: 16px;
+}
+.form-button {
+  background-color: #f76b8a;
+  border: none;
+  border-radius: 7px;
+  padding: 15px 20px;
+  font-size: 16px;
+  color: #fcfefe;
+  margin-left: 6px;
+}
