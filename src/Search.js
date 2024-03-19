@@ -40,7 +40,7 @@ function Search() {
     return (
       <div>
         {form}
-        <ul>
+        <ul style={{ listStyleType: "none" }}>
           <li>Temperature: {Math.round(weather.temperature)}°C</li>
           <li>Description: {weather.description}</li>
           <li>Humidity: {weather.humidity}%</li>
