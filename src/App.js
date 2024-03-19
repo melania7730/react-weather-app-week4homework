@@ -43,23 +43,25 @@ function App() {
         </div>
       </main>
       <footer>
-        This page was coded by
+        This page was coded by{"\t"}
         <a
           href="https://github.com/melania7730"
           rel="noreferrer"
           target="_blank"
         >
-          Melania Tampubolon
+          Melania
         </a>
-        is open sourced on
+        {"\t"}
+        is open sourced on{"\t"}
         <a
           href="https://github.com/melania7730/react-weather-app-week4homework"
           rel="noreferrer"
           target="_blank"
         >
-          Github
+          {"\t"}
+          Github{"\t"}
         </a>
-        and hosted on
+        and hosted on{"\t"}
         <a
           href="https://react-homework-week4.netlify.app"
           rel="noreferrer"
